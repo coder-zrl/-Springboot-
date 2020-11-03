@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.AdmMapper">
+<!--    增加蔬菜-->
+    <insert id="insertVeg" parameterType="com.example.demo.pojo.Veg">
+        insert into test.veg (name,price) values(#{name},#{price})
+    </insert>
+
+<!--    删除蔬菜-->
+    <delete id="deleteVegByName" parameterType="String">
+        delete from test.veg where name=#{name}
+    </delete>
+
+<!--    修改价格-->
+    <update id="updateVegPrice" parameterType="com.example.demo.pojo.Veg">
+        update test.veg set price=#{price} where name=#{name}
+    </update>
+
+<!--    查询价格-->
+    <select id="getVegPriceByName" resultType="String" parameterType="String">
+        select price from test.veg where name=#{name};
+    </select>
+
+<!--    查询密码-->
+    <select id="getPwdById" resultType="String" parameterType="String">
+        select pwd from test.user where account=#{account};
+    </select>
+
+<!--    查询用户列表-->
+    <select id="getUserList" resultType="com.example.demo.pojo.User">
+        select * from test.user;
+    </select>
+
+
+</mapper>
