@@ -20,10 +20,4 @@
         </environment>
     </environments>
 
-
-
-    <!--记得最后把Mapper配置文件放进来-->
-    <mappers>
-        <mapper resource="com/example/demo/mapper/AdmMapper.xml"/>
-    </mappers>
 </configuration>
