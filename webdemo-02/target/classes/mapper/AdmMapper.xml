@@ -1,0 +1,37 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<!DOCTYPE mapper-->
+<!--        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"-->
+<!--        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+<!--<mapper namespace="com.example.demo.mapper.AdmMapper">-->
+<!--&lt;!&ndash;    增加蔬菜&ndash;&gt;-->
+<!--    <insert id="insertVeg" parameterType="com.example.demo.pojo.Veg">-->
+<!--        insert into test.veg (name,price) values(#{name},#{price})-->
+<!--    </insert>-->
+
+<!--&lt;!&ndash;    删除蔬菜&ndash;&gt;-->
+<!--    <delete id="deleteVegByName" parameterType="String">-->
+<!--        delete from test.veg where name=#{name}-->
+<!--    </delete>-->
+
+<!--&lt;!&ndash;    修改价格&ndash;&gt;-->
+<!--    <update id="updateVegPrice" parameterType="com.example.demo.pojo.Veg">-->
+<!--        update test.veg set price=#{price} where name=#{name}-->
+<!--    </update>-->
+
+<!--&lt;!&ndash;    查询价格&ndash;&gt;-->
+<!--    <select id="getVegPriceByName" resultType="String" parameterType="String">-->
+<!--        select price from test.veg where name=#{name};-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    查询密码&ndash;&gt;-->
+<!--    <select id="getPwdById" resultType="String" parameterType="String">-->
+<!--        select pwd from test.user where account=#{account};-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    查询用户列表&ndash;&gt;-->
+<!--    <select id="getUserList" resultType="com.example.demo.pojo.User">-->
+<!--        select * from test.user;-->
+<!--    </select>-->
+
+
+<!--</mapper>-->
